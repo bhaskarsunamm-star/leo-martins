@@ -1,0 +1,34 @@
+:root {
+
+    --primary-color: #6F4E37;
+    --primary-dark: #4B3224;
+    --secondary-color: #C89B6D;
+    --accent-color: #E3C7A3;
+
+    --background-color: #F8F5F2;
+    --surface-color: #FFFDFB;
+    --section-color: #EFE7DE;
+
+    --text-dark: #2B1D17;
+    --text-light: #6C5A50;
+    --white: #FFFFFF;
+
+    --border-color: #E4D7CB;
+
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Poppins", sans-serif;
+
+    --container-width: 1200px;
+
+    --section-padding: 100px;
+
+    --border-radius: 18px;
+    --button-radius: 50px;
+
+    --transition: all 0.35s ease;
+
+    --shadow-light: 0 8px 25px rgba(0,0,0,0.08);
+    --shadow-medium: 0 15px 40px rgba(0,0,0,0.12);
+    --shadow-dark: 0 25px 60px rgba(0,0,0,0.18);
+
+}

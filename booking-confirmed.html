@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Received | Leo Martin's</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body{
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:
+                linear-gradient(rgba(43,29,23,.82), rgba(43,29,23,.9)),
+                url("images/pic10.jpeg") center/cover no-repeat;
+            padding:30px;
+        }
+
+        .confirmation-card{
+            width:100%;
+            max-width:720px;
+            padding:60px 45px;
+            border-radius:32px;
+            text-align:center;
+            background:rgba(255,253,251,.92);
+            box-shadow:0 30px 80px rgba(0,0,0,.28);
+            border:1px solid rgba(255,255,255,.35);
+        }
+
+        .confirmation-card span{
+            display:inline-block;
+            color:var(--secondary-color);
+            font-size:.9rem;
+            font-weight:600;
+            letter-spacing:4px;
+            text-transform:uppercase;
+            margin-bottom:20px;
+        }
+
+        .confirmation-card h1{
+            font-family:"Cinzel", serif;
+            font-size:3.2rem;
+            color:var(--text-dark);
+            margin-bottom:22px;
+        }
+
+        .confirmation-card p{
+            color:var(--text-light);
+            font-size:1.08rem;
+            line-height:1.9;
+            margin-bottom:18px;
+        }
+
+        .random-message{
+            margin:30px auto;
+            padding:22px 26px;
+            border-radius:22px;
+            background:var(--section-color);
+            color:var(--text-dark);
+            font-family:var(--heading-font);
+            font-size:1.45rem;
+        }
+
+        .confirmation-card a{
+            margin-top:20px;
+        }
+
+        @media(max-width:520px){
+            .confirmation-card{
+                padding:45px 28px;
+            }
+
+            .confirmation-card h1{
+                font-size:2.3rem;
+            }
+
+            .random-message{
+                font-size:1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="confirmation-card">
+
+        <span>BOOKING REQUEST RECEIVED</span>
+
+        <h1>Thank You.</h1>
+
+        <p>
+            Your table request has been sent to Leo Martin's. The café team will get back to you soon.
+        </p>
+
+        <div class="random-message" id="randomMessage">
+            Brewing your message...
+        </div>
+
+        <p>
+            We hope your visit is filled with good coffee, warm conversations, and cozy moments.
+        </p>
+
+        <a href="index.html" class="primary-btn">
+            Back To Home
+        </a>
+
+    </div>
+
+    <script>
+        const messages = [
+            "Hope your coffee tastes as good as your plans.",
+            "A cozy table and warm coffee are waiting for you.",
+            "Your café moment is almost ready.",
+            "Good conversations start with great coffee.",
+            "We hope your visit feels like a warm pause.",
+            "Your coffee date just got a little closer.",
+            "May your cup be full and your evening peaceful.",
+            "Something warm is waiting for you at Leo Martin's.",
+            "Slow down, sip well, and enjoy the moment.",
+            "Your table request is brewing beautifully."
+        ];
+
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+        document.getElementById("randomMessage").textContent = randomMessage;
+    </script>
+
+</body>
+</html>
