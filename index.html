@@ -465,10 +465,10 @@
 
             <span>REVIEWS</span>
 
-            <h2>Loved By Our Guests.</h2>
+            <h2>Voices From Our Guests.</h2>
 
             <p>
-                Real moments, warm conversations, and coffee experiences that keep people coming back.
+                Real experiences, warm conversations, and coffee moments shared by people who visit Leo Martin's.
             </p>
 
         </div>
@@ -484,12 +484,14 @@
                 </p>
 
                 <div class="review-user">
+
                     <div class="review-avatar">A</div>
 
                     <div>
                         <h4>Aarav Mehta</h4>
                         <span>Regular Guest</span>
                     </div>
+
                 </div>
 
             </div>
@@ -503,12 +505,14 @@
                 </p>
 
                 <div class="review-user">
+
                     <div class="review-avatar">R</div>
 
                     <div>
                         <h4>Riya Sharma</h4>
                         <span>Coffee Lover</span>
                     </div>
+
                 </div>
 
             </div>
@@ -522,15 +526,87 @@
                 </p>
 
                 <div class="review-user">
+
                     <div class="review-avatar">K</div>
 
                     <div>
                         <h4>Karan D'Souza</h4>
                         <span>Local Visitor</span>
                     </div>
+
                 </div>
 
             </div>
+
+        </div>
+
+        <div class="review-form-wrapper">
+
+            <div class="review-form-content">
+
+                <span>SHARE YOUR EXPERIENCE</span>
+
+                <h3>Leave A Review.</h3>
+
+                <p>
+                    Loved your visit? Share your experience with Leo Martin's and help more coffee lovers discover us.
+                </p>
+
+            </div>
+
+            <form 
+                class="review-form" 
+                name="review" 
+                method="POST" 
+                data-netlify="true" 
+                netlify-honeypot="bot-field"
+                action="/success.html">
+
+                <input type="hidden" name="form-name" value="review">
+
+                <p style="display:none;">
+                    <label>
+                        Don’t fill this out if you're human:
+                        <input name="bot-field">
+                    </label>
+                </p>
+
+                <input type="text" name="name" placeholder="Your Name" required>
+
+                <input type="email" name="email" placeholder="Your Email">
+
+                <div class="rating-field">
+
+                    <p>Your Rating</p>
+
+                    <div class="star-rating">
+
+                        <input type="radio" id="star5" name="rating" value="5 Stars" required>
+                        <label for="star5">★</label>
+
+                        <input type="radio" id="star4" name="rating" value="4 Stars">
+                        <label for="star4">★</label>
+
+                        <input type="radio" id="star3" name="rating" value="3 Stars">
+                        <label for="star3">★</label>
+
+                        <input type="radio" id="star2" name="rating" value="2 Stars">
+                        <label for="star2">★</label>
+
+                        <input type="radio" id="star1" name="rating" value="1 Star">
+                        <label for="star1">★</label>
+
+                    </div>
+
+                </div>
+
+                <textarea name="review" placeholder="Write your review..." required></textarea>
+
+                <button type="submit" class="primary-btn">
+                    Submit Review
+                </button>
+
+            </form>
 
         </div>
 

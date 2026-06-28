@@ -97,7 +97,7 @@ window.addEventListener("load", () => {
 });
 
 const revealElements = document.querySelectorAll(
-    ".section-heading, .about-story-container, .menu-card, .outdoor-content, .outdoor-visual, .gallery-item, .review-card, .contact-content, .booking-box, .contact-map, footer"
+    ".section-heading, .about-story-container, .menu-card, .outdoor-content, .outdoor-visual, .gallery-item, .review-card, .review-form-wrapper, .contact-content, .booking-box, .contact-map, footer"
 );
 
 revealElements.forEach(element => {
