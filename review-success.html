@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted | Leo Martin's</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body{
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:
+                linear-gradient(rgba(43,29,23,.82), rgba(43,29,23,.9)),
+                url("images/pic10.jpeg") center/cover no-repeat;
+            padding:30px;
+        }
+
+        .review-success-card{
+            width:100%;
+            max-width:720px;
+            padding:60px 45px;
+            border-radius:32px;
+            text-align:center;
+            background:rgba(255,253,251,.92);
+            box-shadow:0 30px 80px rgba(0,0,0,.28);
+            border:1px solid rgba(255,255,255,.35);
+        }
+
+        .review-success-card span{
+            display:inline-block;
+            color:var(--secondary-color);
+            font-size:.9rem;
+            font-weight:600;
+            letter-spacing:4px;
+            text-transform:uppercase;
+            margin-bottom:20px;
+        }
+
+        .review-success-card h1{
+            font-family:"Cinzel", serif;
+            font-size:3.2rem;
+            color:var(--text-dark);
+            margin-bottom:22px;
+        }
+
+        .review-success-card p{
+            color:var(--text-light);
+            font-size:1.08rem;
+            line-height:1.9;
+            margin-bottom:18px;
+        }
+
+        .random-review-message{
+            margin:30px auto;
+            padding:22px 26px;
+            border-radius:22px;
+            background:var(--section-color);
+            color:var(--text-dark);
+            font-family:var(--heading-font);
+            font-size:1.45rem;
+        }
+
+        .review-success-card a{
+            margin-top:20px;
+        }
+
+        @media(max-width:520px){
+            .review-success-card{
+                padding:45px 28px;
+            }
+
+            .review-success-card h1{
+                font-size:2.3rem;
+            }
+
+            .random-review-message{
+                font-size:1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="review-success-card">
+
+        <span>REVIEW SUBMITTED</span>
+
+        <h1>Thank You.</h1>
+
+        <p>
+            Your review has been received by Leo Martin's. Thank you for sharing your experience with us.
+        </p>
+
+        <div class="random-review-message" id="randomReviewMessage">
+            Brewing your message...
+        </div>
+
+        <p>
+            Your words help more coffee lovers discover cozy moments at Leo Martin's.
+        </p>
+
+        <a href="index.html" class="primary-btn">
+            Back To Home
+        </a>
+
+    </div>
+
+    <script>
+        const reviewMessages = [
+            "Your kind words mean more than a fresh cup on a slow morning.",
+            "Thanks for sharing your café moment with us.",
+            "Your review just made our coffee corner warmer.",
+            "We’re glad your Leo Martin’s moment was worth sharing.",
+            "Good coffee tastes better with kind words like yours.",
+            "Your review is brewing happiness for our team.",
+            "Thank you for adding your voice to our café story.",
+            "A warm review from a warm guest. Thank you.",
+            "Your feedback helps us serve better, one cup at a time.",
+            "Thanks for being part of the Leo Martin’s experience."
+        ];
+
+        const randomReviewMessage = reviewMessages[Math.floor(Math.random() * reviewMessages.length)];
+
+        document.getElementById("randomReviewMessage").textContent = randomReviewMessage;
+    </script>
+
+</body>
+</html>
