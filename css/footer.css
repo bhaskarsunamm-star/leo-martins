@@ -68,7 +68,7 @@ footer{
 }
 
 footer::after{
-    content:"© 2026 Leo Martins Cafe. Designed & Developed by Bhaskar Sunam.";
+    content:"© 2026 Leo Martins Cafe. Designed & Developed by Bhaskar Sunam and Siddharth Sharma.";
     width:90%;
     max-width:1400px;
     margin:28px auto 0;
