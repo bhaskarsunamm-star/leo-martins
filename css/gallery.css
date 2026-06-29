@@ -133,3 +133,10 @@
 .gallery-item:hover::after{
     opacity:1;
 }
+
+.gallery-item::before,
+.gallery-item::after{
+    display:none !important;
+    opacity:0 !important;
+    visibility:hidden !important;
+}
